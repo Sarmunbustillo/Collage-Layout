@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(50% 50% at 50% 50%, #d16d8de7 0%, #902344e5 100%), #902344;
+    color: #FFF;
+    height: 100%;
+    min-height: 120vh;
+}
+
+.header__container, .header__nav-list {
+    display: flex;
+}
+
+.header__container > * {
+    flex: 1 1 auto;
+}
+
+.header__container {
+  height: 100%;
+  padding: 1.25rem 0;
+  position: fixed;
+  right: 1.25rem;
+  top: 0;
+  writing-mode: vertical-rl;  
+}
+
+.header__nav-list {
+    justify-content: space-between;
+}
