@@ -3,28 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Collage Layout</title>
 </head>
 <body>
 
     <header class="header__container">
-        <p>asad<span class="header__text"></span></p>
-        <p>asdas<span class="header__text"></span></p>
+        <p><span class="header__text">asad</span></p>
+        <p><span class="header__text">asdas</span></p>
         <nav class="header__nav">
             <ul class="header__nav-list">
-                <li><a href="#" class="header__nav-link"></a>Art</li>
-                <li><a href="#" class="header__nav-link"></a>About</li>
-                <li><a href="#" class="header__nav-link"></a>Contact</li>
+                <li><a href="#" class="header__nav-link">Art</a></li>
+                <li><a href="#" class="header__nav-link">About</a></li>
+                <li><a href="#" class="header__nav-link">Contact</a></li>
             </ul>            
         </nav>
     </header>
     
     <main class="main">
         <div class="main__container">
-            <h1 class="main__heading">Here is where the heading would be</h1>
+            <h1 class="main__heading">
+                <mark>Check It Out</mark>
+                <br/>
+                <mark>On</mark>
+                <br/>
+                <mark>My Github</mark>
+            </h1>
 
-            <div>Component here</div>
+            <div class="grid-container" aria-hidden="true">
+                <div class="grid" aria-hidden="true">
+                    <div class="grid__item grid__item--girl">
+                        <img src="./img/girl.jpg" alt="">
+                    </div>
+                    <div class="grid__item grid__item--1st">
+                        <img src="./img/1st.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--2nd">
+                        <img src="./img/2nd.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--3rd">
+                        <img src="./img/3rd.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--4th">
+                        <img src="./img/4th.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--5th">
+                        <img src="./img/5th.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--6th">
+                        <img src="./img/6th.png.png" alt="">
+                    </div>
+                    <div class="grid__item grid__item--7th">
+                        <img src="./img/7th.png.png" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
