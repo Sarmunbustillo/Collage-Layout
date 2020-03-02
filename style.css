@@ -7,13 +7,14 @@
 
 html {
     font-size: 16px;
+    height: 100vh;
 }
 
-body {
+.body {
     background: radial-gradient(50% 50% at 50% 50%, #656064 0%, #211d20 100%), #211d20;
     color: #FFF;
     height: 100%;
-    min-height: 120vh;
+    min-height: 100vh;
     font-family:'Roboto' ;
 }
 
@@ -25,6 +26,7 @@ body {
 
 .header__container > * {
     flex: 1 1 auto;
+    padding-bottom: .625rem;
 }
 
 .header__container {
@@ -34,27 +36,35 @@ body {
   right: 1.25rem;
   top: 0;
   writing-mode: vertical-rl;  
+  z-index: 200;
 }
 
 .header__nav-list {
     justify-content: space-between;
     list-style-type: none;
 }
+.header__text {
+    display:block;
+}
 
 .header__nav-link {
     text-decoration: none;
     color: white;
+    display:inline-block;
+    padding-bottom: .625rem;
 }
+
+.header__nav-list li:last-child .header__nav-link {
+    padding-bottom: 0;
+  }
 
 /* main */
 
 .main {
-    padding: 5rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    margin-top: 2rem;
     width: 100%;
+    margin: 5rem auto;
+    max-width: 65rem;
 }
 
 .main__container {
@@ -63,9 +73,10 @@ body {
 
 
 .main__heading {
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-transform: uppercase;
     margin-bottom: 2rem;
+    z-index: 10;
 }
 
 mark {
@@ -84,16 +95,78 @@ mark {
 }
 
 .grid{
-    display: grid;
-    grid-template-columns: repeat(12,fr);
-    grid-template-rows: repeat(12,fr);
-    position: relative;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  position: relative;
+  grid-template-rows: repeat(12, 1fr);
+}
+.grid__item{
+    width: auto;
 }
 
 img {
     display: block;
     width: 100%;
+    
 }
+
+.grid__item--girl {
+    grid-column: 1 / span 9;
+    z-index: 0;
+    grid-row: 1 / -1;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 11% 89%);
+}
+
+.grid__item--1st {
+    grid-column: 1 / span 10;
+    grid-row: 4 / span 2;
+    z-index: 2;
+    clip-path: polygon(5% 10%, 27% 3%, 94% 25%, 84% 98%, 39% 98%, 11% 98%, 4% 66%, 4% 34%);
+}
+
+.grid__item--2nd {
+    grid-column: 6 / span 5;
+    z-index: 3;
+    grid-row: 1 / 10;
+    clip-path: polygon(71% 3%, 90% 24%, 58% 100%, 10% 83%, 0 6%);
+    clip-path: polygon(9% 2%, 90% 9%, 93% 96%, 4% 98%, 21% 24%);
+    
+}
+
+.grid__item--3rd {
+    grid-column: 1 / span 3;
+    z-index: 5;
+    grid-row: 1 /  -1;
+    clip-path: polygon(1% 0%,56% 1%, 24% 71%, 4% 24%);
+}
+
+.grid__item--4th {
+    grid-column: 2/ span 3;
+    z-index: 6;
+    grid-row: 2 /  -1;
+    clip-path: polygon(1% 2%, 88% 10%, 69% 84%, 2% 96%);
+}
+
+.grid__item--5th {
+    grid-column: 1 / span 10;
+    z-index: 7;
+    grid-row: 4 /  -1;
+    clip-path: polygon(0 0, 100% 52%, 61% 100%, 0% 100%);
+}
+
+.grid__item--6th {
+    grid-column: 10 / span 2;
+    z-index: 2;
+    grid-row: 2 /  -1;
+    clip-path: polygon(37% 0, 80% 0, 47% 72%, 0% 100%);
+}
+
+
+
+
+
+
+
 
 
 
