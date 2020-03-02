@@ -1,0 +1,22 @@
+{
+  "name": "collage-layout",
+  "version": "1.0.0",
+  "description": "Collage using CSS grid and clip path property",
+  "main": "rellax.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarmunbustillo/Collage-Layout.git"
+  },
+  "author": "Sarmun Bustillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarmunbustillo/Collage-Layout/issues"
+  },
+  "homepage": "https://github.com/Sarmunbustillo/Collage-Layout#readme",
+  "dependencies": {
+    "rellax": "^1.12.1"
+  }
+}
