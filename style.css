@@ -55,6 +55,21 @@ html {
     display:inline-block;
     padding-bottom: .625rem;
     font-size: 1.5rem;
+    transition: all .3s ease-in-out;
+}
+
+.header__nav-link:hover {
+    color: rgba(158, 21, 21, 0.856) ;
+}
+
+#tickets{
+    background-color: rgba(158, 21, 21, 0.87);
+    color: white;
+    padding: .90rem .40rem;
+    
+}
+#tickets:hover {
+    background-color:rgba(95, 13, 13, 0.87) ;
 }
 
 .header__nav-list li:last-child .header__nav-link {
