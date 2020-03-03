@@ -1,2 +1,2 @@
 # Collage-Layout
-Creating a collage layout for a landing page
+Creating a css collage layout for a landing page
